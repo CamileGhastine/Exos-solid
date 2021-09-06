@@ -7,6 +7,6 @@ class ManageNews
     public function __construct(Log $log, string $title)
     {
         $this->title = $title;
-        $log::addLog();     
+        $log::addLog((new DateTime())->format('d-m-y m:m:s'));     
     }
 }
