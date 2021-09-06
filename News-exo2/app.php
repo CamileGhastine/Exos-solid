@@ -5,7 +5,6 @@ spl_autoload_register(function ($class) {
 });
 
 $n1 = new ManageNews(new Log, "Article PHP");
-
 $n2 = new ManageNews(new Log, "Article MySQL");
 $n3 = new ManageNews(new Log, "Article JS");
 $n4 = new ManageNews(new Log, "Article MongoDB");

@@ -7,6 +7,6 @@ class ManageNews
     public function __construct(Log $log, string $title)
     {
         $this->title = $title;
-        $this->Log = $log;     
+        $log::addLog();     
     }
 }
