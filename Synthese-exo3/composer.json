@@ -1,0 +1,16 @@
+{
+    "name": "camile/synthese-exo3",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CamileGhastine",
+            "email": "camileghastine@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Park\\": "src/"
+        }
+    }
+}
