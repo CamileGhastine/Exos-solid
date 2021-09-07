@@ -1,6 +1,6 @@
 <?php
 
-namespace Lamp\Agregation;
+namespace Lamp\Composition;
 
 class Light
 {
