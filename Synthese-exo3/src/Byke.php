@@ -8,6 +8,7 @@ class Byke extends Vehicule implements Parkable
 {
     private string $namePark;
     private string $place;
+    protected static float $speed;
 
 
     public function __toString(): string

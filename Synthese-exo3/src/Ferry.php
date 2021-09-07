@@ -7,6 +7,7 @@ class Ferry extends Vehicule
     private Parking $parking;
     private string $namePark;
     private string $place;
+    protected static float $speed;
 
     public function __construct(Parking $parking)
     {

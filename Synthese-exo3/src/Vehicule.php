@@ -2,19 +2,21 @@
 
 namespace Park;
 
-class Vehicule
-{
-    private string $status;
-    private string $name;
-    private string $engine;
+use TypeError;
 
-    // on expose la variable $speed aux classes filles (ou classes dérivées)
-    protected static float $speed;
+abstract class Vehicule
+{
+    protected string $status;
+    protected string $name;
+    protected string $engine;
+    private array $types = ['petrol', 'electric'];
 
     public function __construct(string $name)
     {
         $this->setName($name);
     }
+
+    abstract public static function setSpeed(float $speed): void;
 
     /**
      * Get the value of status
@@ -71,6 +73,10 @@ class Vehicule
      */
     public function setEngine($engine)
     {
+        if(in_array(strtolower($engine), $this->types)) {
+            throw new TypeError("le moteur doit être au petrol ou electric");
+        }
+
         $this->engine = $engine;
 
         return $this;

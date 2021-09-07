@@ -7,6 +7,7 @@ use Park\Vehicule;
 class Plane extends Vehicule
 {
     private string $category;
+    protected static float $speed;
 
     public function __toString(): string
     {
