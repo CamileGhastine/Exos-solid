@@ -15,7 +15,7 @@ class Formater
 
     public function date($date)
     {
-        return Date($this->format, $date);
+        return (new DateTime($date))->format($this->format);
     }
 }
 

@@ -13,7 +13,7 @@ class Tools
 
     public function date($date)
     {
-        return new Date($date)->format($this->format);
+        return (new DateTime($date))->format($this->format);
     }
 
     public function token(){
