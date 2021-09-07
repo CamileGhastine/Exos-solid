@@ -2,11 +2,12 @@
 
 require (__DIR__ . "/vendor/autoload.php");
 
-use Lamp\Lamp;
-use Lamp\Light;
+use Lamp\Agregation\Lamp;
+use Lamp\Agregation\Light;
 
 $light = new Light;
-$lamp = new Lamp;
+$lamp = new Lamp();
+$lamp->setLight($light);
 
 echo $lamp; // Off
 $lamp->switch();
