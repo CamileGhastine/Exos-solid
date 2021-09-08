@@ -1,0 +1,15 @@
+{
+    "name": "camile/panier-exo9",
+    "authors": [
+        {
+            "name": "CamileGhastine",
+            "email": "camileghastine@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
