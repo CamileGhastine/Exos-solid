@@ -29,5 +29,4 @@ class StorageArray implements Storable
             unset($this->storage[$name]); 
         }
     }
-
 }

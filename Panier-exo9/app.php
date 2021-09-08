@@ -10,7 +10,8 @@ $products = [
     'orange' => new Product('orange', 7.5),
 ];
 
-$storageSession =  new StorageArray;
+// $storageSession =  new StorageArray;
+$storageSession =  new StorageSession;
 $cart = new Cart($storageSession);
 
 extract($products);
@@ -23,8 +24,7 @@ $cart->buy($strawberry, 10);
 echo "\n";
 echo $cart->total() ; // 241.2
 echo "\n";
-// var_dump($cart);
-// die();
+
 // retire un produit du panier
 echo "restore" . "\n";
 $cart->restore($strawberry);
