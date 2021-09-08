@@ -15,7 +15,7 @@ class Music implements Productable
 
     public function setPrice(float $price): self
     {
-        $this->price = $price;
+        $this->price = round($price, Productable::PRECISION_DECIMAL);
 
         return $this;
     }

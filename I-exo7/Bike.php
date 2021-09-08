@@ -15,7 +15,7 @@ class Bike implements Productable
 
     public function setPrice(float $price): self
     {
-        $this->price = $price;
+        $this->price = round($price, Productable::PRECISION_DECIMAL);
 
         return $this;
     }
@@ -23,5 +23,12 @@ class Bike implements Productable
     public function getName(): string
     {
         return $this->name;
+    }
+
+    public function setName(string $name)
+    {
+        $this->name = $name;
+
+        return $this;
     }
 }

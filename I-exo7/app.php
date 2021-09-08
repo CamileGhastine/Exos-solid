@@ -5,7 +5,7 @@ spl_autoload_register(function ($class) {
 });
 
 $products = [
-    new Book('Moby Dick', 30),
+    new Book('Moby Dick', 30, "isbn1234"),
     new Music('AC/DC', 17.5),
     new Bike('Brompton', 1430),
 ];
